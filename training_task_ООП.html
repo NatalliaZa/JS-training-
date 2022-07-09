@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Создать класс: “Человек”. 
+        У человека должны быть следующие параметры: “имя”, “возраст” и “пол”.
+        Конструктор принимает только 1 параметр: “пол”:*/
+        /* Создать методы, позволяющие:
+        a) Менять/сообщать имя человека;
+        b) Менять/сообщать возраст человека;
+        c) Сообщать пол человека: */
+
+
+        class Person {
+            constructor(sex){
+                this.sex = sex;
+                this.name = prompt('Введите Ваше имя: ');
+                this.age = +prompt('Введите Ваш возраст: ');
+                this.sex = prompt('Вы мужчины или женщина: ');
+            }
+            setName(){
+            console.log(`Меня зовут: ${this.name}`);
+            }
+            getName(){
+            }
+            setAge(){
+            console.log(`Мой возраст: ${this.age}`);
+            }
+            getAge(){
+            }
+            getSex(){
+            console.log(`Я -  ${this.sex}`);
+            }          
+        };
+
+        let person2 = new Person('м');
+        person2.setName('Маша');
+        person2.setAge(23);
+        person2.getName();
+        person2.getAge();
+        person2.getSex();
+
+
+        
+    
+        
+    </script>
+</body>
+</html>
